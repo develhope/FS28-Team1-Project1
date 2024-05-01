@@ -10,5 +10,17 @@ const team1 = [
     favoriteFilm:"Batman",
     favoriteBook:"Harry Potter",
     petName:"Puppy",
+
+    name: "Giovanni",
+    surname: "Vitolo",
+    age: 29,
+    city: "Eboli",
+    hobby: "",
+    favoriteFood: "Cannelloni",
+    favoriteVideoGame: "Final Fantasy X",
+    favoriteFilm: "Shutter Island",
+    favoriteBook: "",
+    petName: "Sasha",
+
   }
 ]
