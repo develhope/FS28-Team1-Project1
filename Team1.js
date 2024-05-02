@@ -51,3 +51,27 @@ const team1 = [
     petName: "Sasha",
   },
 ];
+
+// Team 1 : ADAMO FALL
+
+// Punto 3- Print the team middle age.
+
+function printMid(team1) {
+  const ageSum = team1.reduce((sum, team) => sum + team.age, 0);
+  return ageSum / team1.length;
+}
+
+const average = printMid(team1);
+console.log(`L'età media del team è: ${average}`);
+
+// Punto 4- Print who has a pet (name petName)
+
+console.log(
+  team1
+    .filter((member) => member.petName !== "")
+    .map(
+      (member) =>
+        `${member.name} ${member.surname} has a pet named ${member.petName}`
+    )
+    .join("\n")
+);
