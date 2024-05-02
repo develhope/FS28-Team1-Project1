@@ -51,3 +51,14 @@ const team1 = [
     petName: "Sasha",
   },
 ];
+
+// TEAM 1 Franklin Nwagu
+
+// ex 5 Print who wrote ‘LOL’ or ‘League Of Legends’ as a favorite video game. (name)
+
+function searchGame() {
+  return team1.filter(
+    (team1) => team1.favoriteVideoGame === "League of Legends" || team1.favoriteVideoGame === "LOL"
+  );
+}
+console.log(searchGame);
