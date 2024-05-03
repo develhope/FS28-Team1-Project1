@@ -103,3 +103,24 @@ console.log(
     )
     .join("\n")
 );
+
+// 6 - Print duplicated names Giovanni Vitolo
+
+const teams = [];
+
+function countDupeNames(teams) {
+    let dupeNames = [];
+
+    teams.forEach(element => {
+        const dupes = teams.filter(current => current.name === element.name);
+
+        if (dupes.length > 1) {
+            dupeNames.push({
+                member: element,
+                count: dupes.length
+            });
+        }
+    });
+
+    return dupeNames;
+}
