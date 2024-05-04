@@ -124,3 +124,13 @@ function countDupeNames(teams) {
 
     return dupeNames;
 }
+
+// Team 1 : Fiamma Ferrone
+// Print the team in age order (name age).
+
+const ageOrder = team1.slice().sort((a, b) => {
+  return a.age - b.age 
+});
+ageOrder.forEach(person => {
+console.log(`${person.name}, ${person.age}`);  
+});
